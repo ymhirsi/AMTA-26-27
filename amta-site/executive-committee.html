@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Executive Committee · Appalachian Music Teachers Association</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.officers-intro { background: var(--paper); padding: 80px 40px 40px; text-align: center; }
+.officers-intro p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.officers-section { background: var(--paper); padding: 60px 40px 110px; }
+
+.officer-grid {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.officer-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.officer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(20, 40, 65, 0.20);
+}
+
+.officer-portrait {
+  aspect-ratio: 4/5;
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--orange-soft);
+  position: relative;
+  overflow: hidden;
+}
+.officer-portrait::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 60%, rgba(20, 40, 65, 0.3));
+  pointer-events: none;
+}
+.officer-portrait svg {
+  width: 64px;
+  height: 64px;
+  opacity: 0.5;
+}
+.officer-portrait .ph-label {
+  font-family: var(--body);
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  position: relative;
+  z-index: 1;
+}
+
+.officer-body {
+  padding: 32px 28px 36px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.officer-role {
+  font-family: var(--body);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+.officer-name {
+  font-family: var(--display);
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.officer-year {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.officer-bio {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--muted);
+  flex: 1;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+@media (max-width: 960px) {
+  .officer-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .officers-intro, .officers-section { padding: 50px 24px; }
+}
+@media (max-width: 600px) {
+  .officer-grid { grid-template-columns: 1fr; max-width: 380px; margin: 0 auto; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>Founded 1972</span>
+  <span class="sep">·</span>
+  <span>Upper East Tennessee</span>
+  <span class="sep">·</span>
+  <span>Affiliated with MTNA &amp; TMTA</span>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">A</div>
+      <div class="brand-text">
+        <span class="full">Appalachian Music Teachers</span>
+        <span class="sub">Association · Est. 1972</span>
+      </div>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav.primary').classList.toggle('open')">
+      <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+    </button>
+    <nav class="primary">
+      <a href="about.html">About</a>
+      <a href="executive-committee.html" class="active">Leadership</a>
+      <a href="events.html">Events</a>
+      <a href="for-students.html">Students</a>
+      <a href="resources.html">Find a Teacher</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="sep">·</span><span>Leadership</span>
+    </div>
+    <h1>The Executive <em>Committee</em></h1>
+    <p>AMTA is led by a volunteer board of music teachers who give their time and expertise to keep our community thriving.</p>
+  </div>
+</section>
+
+<section class="officers-intro">
+  <p>Our officers are elected from among AMTA's active membership and serve staggered terms. Each role carries specific responsibilities — from programming and membership to financial oversight and our annual student auditions.</p>
+</section>
+
+<section class="officers-section">
+  <div class="officer-grid">
+
+    <div class="officer-card">
+      <div class="officer-portrait">
+        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+        <div class="ph-label">Photo placeholder</div>
+      </div>
+      <div class="officer-body">
+        <div class="officer-role">President</div>
+        <div class="officer-name">David Brickle</div>
+        <div class="officer-year">1st Year</div>
+        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
+      </div>
+    </div>
+
+    <div class="officer-card">
+      <div class="officer-portrait">
+        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+        <div class="ph-label">Photo placeholder</div>
+      </div>
+      <div class="officer-body">
+        <div class="officer-role">1st Vice President · Programs</div>
+        <div class="officer-name">Allison Mauger</div>
+        <div class="officer-year">2nd Year</div>
+        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
+      </div>
+    </div>
+
+    <div class="officer-card">
+      <div class="officer-portrait">
+        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+        <div class="ph-label">Photo placeholder</div>
+      </div>
+      <div class="officer-body">
+        <div class="officer-role">2nd Vice President · Membership</div>
+        <div class="officer-name">Tempa Bader</div>
+        <div class="officer-year">2nd Year</div>
+        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
+      </div>
+    </div>
+
+    <div class="officer-card">
+      <div class="officer-portrait">
+        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+        <div class="ph-label">Photo placeholder</div>
+      </div>
+      <div class="officer-body">
+        <div class="officer-role">Secretary</div>
+        <div class="officer-name">Yahya Mhirssi</div>
+        <div class="officer-year">2nd Year</div>
+        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
+      </div>
+    </div>
+
+    <div class="officer-card">
+      <div class="officer-portrait">
+        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+        <div class="ph-label">Photo placeholder</div>
+      </div>
+      <div class="officer-body">
+        <div class="officer-role">Treasurer</div>
+        <div class="officer-name">Jerilyn Paolini</div>
+        <div class="officer-year">2nd Year</div>
+        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
+      </div>
+    </div>
+
+    <div class="officer-card">
+      <div class="officer-portrait">
+        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+        <div class="ph-label">Photo placeholder</div>
+      </div>
+      <div class="officer-body">
+        <div class="officer-role">Executive Secretary / Treasurer</div>
+        <div class="officer-name">Benjamin Caton</div>
+        <div class="officer-year">&nbsp;</div>
+        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
+      </div>
+    </div>
+
+    <div class="officer-card">
+      <div class="officer-portrait">
+        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+        <div class="ph-label">Photo placeholder</div>
+      </div>
+      <div class="officer-body">
+        <div class="officer-role">Immediate Past President</div>
+        <div class="officer-name">Eva Polgar</div>
+        <div class="officer-year">&nbsp;</div>
+        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="officers-intro" style="padding: 60px 40px 90px; background: var(--cream-warm);">
+  <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+    <div class="section-eyebrow" style="justify-content: center;">2025–2026 Teacher of the Year</div>
+    <div style="font-family: var(--display); font-size: clamp(2rem, 3.6vw, 2.6rem); color: var(--navy); font-weight: 500; margin: 12px 0 14px;">Eva Polgar</div>
+    <p style="font-family: var(--display); font-style: italic; font-size: 18px; color: var(--muted);">Recognized by AMTA for her contributions to music teaching in upper East Tennessee.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Appalachian Music Teachers Association</h4>
+        <p>A local affiliate of the Tennessee Music Teachers Association and the Music Teachers National Association, serving upper East Tennessee since 1972.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="about.html">About AMTA</a></li>
+          <li><a href="executive-committee.html">Leadership</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="resources.html">Find a Teacher</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Community</h5>
+        <ul>
+          <li><a href="for-students.html">For Students</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Affiliated With</h5>
+        <ul>
+          <li><a href="https://www.mtna.org" target="_blank" rel="noopener">MTNA</a></li>
+          <li><a href="https://www.tnmta.org" target="_blank" rel="noopener">TMTA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 Appalachian Music Teachers Association · Founded 1972</span>
+      <div class="affiliations">
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

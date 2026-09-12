@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About · Appalachian Music Teachers Association</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.content-section { background: var(--paper); padding: 100px 40px; }
+.content-section.alt { background: var(--cream-warm); }
+.content-narrow { max-width: 820px; margin: 0 auto; }
+
+.affiliations-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.aff-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  padding: 40px;
+  position: relative;
+}
+.aff-card .acronym {
+  font-family: var(--body);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.aff-card h3 {
+  font-size: 26px;
+  color: var(--navy);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.aff-card p { font-size: 15px; line-height: 1.7; color: var(--ink); margin-bottom: 20px; }
+.aff-card a {
+  font-family: var(--body);
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--navy);
+  border-bottom: 1px solid var(--orange);
+  padding-bottom: 3px;
+}
+.aff-card a:hover { color: var(--orange); }
+
+@media (max-width: 760px) {
+  .affiliations-grid { grid-template-columns: 1fr; }
+  .content-section { padding: 60px 24px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>Founded 1972</span>
+  <span class="sep">·</span>
+  <span>Upper East Tennessee</span>
+  <span class="sep">·</span>
+  <span>Affiliated with MTNA &amp; TMTA</span>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">A</div>
+      <div class="brand-text">
+        <span class="full">Appalachian Music Teachers</span>
+        <span class="sub">Association · Est. 1972</span>
+      </div>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav.primary').classList.toggle('open')">
+      <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+    </button>
+    <nav class="primary">
+      <a href="about.html" class="active">About</a>
+      <a href="executive-committee.html">Leadership</a>
+      <a href="events.html">Events</a>
+      <a href="for-students.html">Students</a>
+      <a href="resources.html">Find a Teacher</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="sep">·</span><span>About</span>
+    </div>
+    <h1>About <em>AMTA</em></h1>
+    <p>A community of music teachers, university faculty, and music educators serving upper East Tennessee since 1972.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="content-narrow">
+    <div class="prose">
+      <h2>Our Mission</h2>
+      <p>Drawn from Article II of our Constitution:</p>
+      <blockquote>To promote professional and social relations between members; to provide programs, discussions, and activities of interest to private music teachers, college and university faculty, and others interested in music teaching; to raise the standards of music teaching, performance, and appreciation among teachers, institutions, and the general public in upper East Tennessee; and to encourage greater respect for the music teaching profession.</blockquote>
+
+      <h2>Our History</h2>
+      <p>The Appalachian Music Teachers Association was founded in 1972 as a local affiliate of the Tennessee Music Teachers Association and the Music Teachers National Association.</p>
+      <div class="placeholder-block">[PLACEHOLDER — Add the story of AMTA's founding and growth over the past 50+ years.]</div>
+
+      <h2>What We Do</h2>
+      <p>AMTA serves its members and the broader community through:</p>
+      <ul>
+        <li><strong>Monthly programs</strong> — conferences, masterclasses, and recitals featuring respected scholars and performers.</li>
+        <li><strong>Annual student auditions</strong> — adjudicated performances at ETSU each spring, leading to the Honors Recital and TMTA State Competitions.</li>
+        <li><strong>Professional fellowship</strong> — bringing teachers together for shared learning and support.</li>
+        <li><strong>Affiliation with TMTA and MTNA</strong> — connecting our members and students to a national network.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt">
+  <div class="content-narrow">
+    <div class="section-head">
+      <div class="section-eyebrow">Affiliations</div>
+      <h2>Part of a <em>Larger Community</em></h2>
+    </div>
+  </div>
+  <div class="affiliations-grid">
+    <div class="aff-card">
+      <div class="acronym">TMTA</div>
+      <h3>Tennessee Music Teachers Association</h3>
+      <p>AMTA is a local affiliate of TMTA — the state association that organizes the Tennessee State Competitions and statewide professional development. Students who earn Superior ratings at our spring auditions advance to TMTA State.</p>
+      <a href="https://www.tnmta.org" target="_blank" rel="noopener">Visit TMTA →</a>
+    </div>
+    <div class="aff-card">
+      <div class="acronym">MTNA</div>
+      <h3>Music Teachers National Association</h3>
+      <p>Through our TMTA affiliation, AMTA members are part of MTNA — the national professional organization for music teachers, providing certification, advocacy, and the annual MTNA national conference.</p>
+      <a href="https://www.mtna.org" target="_blank" rel="noopener">Visit MTNA →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Appalachian Music Teachers Association</h4>
+        <p>A local affiliate of the Tennessee Music Teachers Association and the Music Teachers National Association, serving upper East Tennessee since 1972.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="about.html">About AMTA</a></li>
+          <li><a href="executive-committee.html">Leadership</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="resources.html">Find a Teacher</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Community</h5>
+        <ul>
+          <li><a href="for-students.html">For Students</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Affiliated With</h5>
+        <ul>
+          <li><a href="https://www.mtna.org" target="_blank" rel="noopener">MTNA</a></li>
+          <li><a href="https://www.tnmta.org" target="_blank" rel="noopener">TMTA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 Appalachian Music Teachers Association · Founded 1972</span>
+      <div class="affiliations">
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
