@@ -4,25 +4,24 @@
    ═══════════════════════════════════════════════════════════ */
 
 :root {
-  /* Core palette — navy dominant */
-  --navy: #1e3a5f;
-  --navy-deep: #142841;
-  --navy-soft: #2c5380;
-  --navy-mist: #4a6b8e;
+  --navy: #29445C;
+  --navy-deep: #203746;
+  --navy-soft: #506B7A;
+  --navy-mist: #708491;
 
-  /* Warm accents */
-  --orange: #b85c2e;
-  --orange-soft: #d4814f;
-  --goldenrod: #c89a3a;
-  --goldenrod-soft: #dfbf73;
+  --orange: #A64B3C;
+  --orange-soft: #C16A5B;
 
-  /* Neutrals */
-  --cream: #f3ead7;
-  --cream-warm: #e8dcc2;
-  --paper: #faf4e8;
-  --ink: #1f2937;
-  --muted: #6b6256;
-  --rule: #d4c5a3;
+  --goldenrod: #B78A3B;
+  --goldenrod-soft: #D0B477;
+
+  --cream: #F1F0EB;
+  --cream-warm: #E5E4DE;
+  --paper: #F7F6F2;
+
+  --ink: #283238;
+  --muted: #687078;
+  --rule: #D9DAD7;
 
   --display: 'Cormorant Garamond', Georgia, serif;
   --body: 'Lora', Georgia, serif;
