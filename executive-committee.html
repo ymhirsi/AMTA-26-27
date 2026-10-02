@@ -41,46 +41,9 @@
   box-shadow: 0 20px 40px -15px rgba(20, 40, 65, 0.20);
 }
 
-.officer-portrait {
-  aspect-ratio: 4/5;
-  background: var(--navy);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: var(--orange-soft);
-  position: relative;
-  overflow: hidden;
-}
-.officer-portrait::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, transparent 60%, rgba(20, 40, 65, 0.3));
-  pointer-events: none;
-}
-.officer-portrait svg {
-  width: 64px;
-  height: 64px;
-  opacity: 0.5;
-}
-.officer-portrait .ph-label {
-  font-family: var(--body);
-  font-size: 10px;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  opacity: 0.6;
-  position: relative;
-  z-index: 1;
-}
-
 .officer-body {
-  padding: 32px 28px 36px;
+  padding: 36px 28px;
   text-align: center;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 .officer-role {
   font-family: var(--body);
@@ -104,15 +67,6 @@
   font-style: italic;
   font-size: 14px;
   color: var(--muted);
-  margin-bottom: 16px;
-}
-.officer-bio {
-  font-size: 14.5px;
-  line-height: 1.65;
-  color: var(--muted);
-  flex: 1;
-  margin-bottom: 0;
-  font-style: italic;
 }
 
 @media (max-width: 960px) {
@@ -175,93 +129,50 @@
   <div class="officer-grid">
 
     <div class="officer-card">
-      <div class="officer-portrait">
-        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
-        <div class="ph-label">Photo placeholder</div>
-      </div>
       <div class="officer-body">
         <div class="officer-role">President</div>
         <div class="officer-name">David Brickle</div>
         <div class="officer-year">1st Year</div>
-        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
       </div>
     </div>
 
     <div class="officer-card">
-      <div class="officer-portrait">
-        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
-        <div class="ph-label">Photo placeholder</div>
-      </div>
       <div class="officer-body">
         <div class="officer-role">1st Vice President · Programs</div>
         <div class="officer-name">Allison Mauger</div>
         <div class="officer-year">2nd Year</div>
-        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
       </div>
     </div>
 
     <div class="officer-card">
-      <div class="officer-portrait">
-        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
-        <div class="ph-label">Photo placeholder</div>
-      </div>
       <div class="officer-body">
         <div class="officer-role">2nd Vice President · Membership</div>
         <div class="officer-name">Tempa Bader</div>
         <div class="officer-year">2nd Year</div>
-        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
       </div>
     </div>
 
     <div class="officer-card">
-      <div class="officer-portrait">
-        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
-        <div class="ph-label">Photo placeholder</div>
-      </div>
       <div class="officer-body">
         <div class="officer-role">Secretary</div>
         <div class="officer-name">Yahya Mhirssi</div>
         <div class="officer-year">2nd Year</div>
-        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
       </div>
     </div>
 
     <div class="officer-card">
-      <div class="officer-portrait">
-        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
-        <div class="ph-label">Photo placeholder</div>
-      </div>
       <div class="officer-body">
         <div class="officer-role">Treasurer</div>
         <div class="officer-name">Jerilyn Paolini</div>
         <div class="officer-year">2nd Year</div>
-        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
       </div>
     </div>
 
     <div class="officer-card">
-      <div class="officer-portrait">
-        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
-        <div class="ph-label">Photo placeholder</div>
-      </div>
       <div class="officer-body">
         <div class="officer-role">Executive Secretary / Treasurer</div>
         <div class="officer-name">Benjamin Caton</div>
         <div class="officer-year">&nbsp;</div>
-        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
-      </div>
-    </div>
-
-    <div class="officer-card">
-      <div class="officer-portrait">
-        <svg fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
-        <div class="ph-label">Photo placeholder</div>
-      </div>
-      <div class="officer-body">
-        <div class="officer-role">Immediate Past President</div>
-        <div class="officer-name">Eva Polgar</div>
-        <div class="officer-year">&nbsp;</div>
-        <p class="officer-bio">[PLACEHOLDER — Add a short bio.]</p>
       </div>
     </div>
 
